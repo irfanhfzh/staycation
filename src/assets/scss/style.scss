@@ -6,6 +6,7 @@
  */
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap");
+@import "colorVariables";
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -137,11 +138,11 @@ section {
 .meta-wrapper {
     margin-top: 1rem;
     h5 {
-    font-size: 1.125rem;
-    margin-bottom: 2px;
+        font-size: 1.125rem;
+        margin-bottom: 2px;
     }
     span {
-    font-size: 0.875rem;
+        font-size: 0.875rem;
     }
 }
 
@@ -150,43 +151,43 @@ section {
     cursor: pointer;
     height: 100%;
     &:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: scale(1.1);
-    transition: 0.5s transform ease-in-out;
-    z-index: 2;
-    @include gradient-y(rgba($black, 0), rgba($black, 0.51), 0%, 100%);
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: scale(1.1);
+        transition: 0.5s transform ease-in-out;
+        z-index: 2;
+        @include gradient-y(rgba($black, 0), rgba($black, 0.51), 0%, 100%);
     }
 
     .img-wrapper {
-    z-index: 1;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: scale(1.1);
-    transition: 0.25s transform ease-in-out;
+        z-index: 1;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: scale(1.1);
+        transition: 0.25s transform ease-in-out;
     }
 
     .meta-wrapper {
-    z-index: 4;
-    color: $white;
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    transform: translateY(0);
-    transition: 0.3s transform ease-in-out;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+        z-index: 4;
+        color: $white;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(0);
+        transition: 0.3s transform ease-in-out;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
     }
 
     &:hover {
@@ -202,3 +203,40 @@ section {
     }
 }
 }
+
+.testimonial-hero,
+.testimonial-hero img {
+    width: 365px;
+    height: 500px;
+}
+
+footer {
+    border-top: 1px solid $gray-200;
+    padding-top: 50px;
+  
+    .brand-tagline {
+      margin-top: 8px;
+      color: $gray-500;
+      font-weight: 300;
+    }
+  
+    .list-group-item {
+      padding: 0.3125rem 0;
+      border: 0;
+      a,
+      span {
+        color: $gray-500;
+        font-weight: 300;
+      }
+      a {
+        @include hover-focus {
+          color: $gray-800;
+        }
+      }
+    }
+    .copyrights {
+      margin: 50px 0;
+      font-weight: 300;
+      color: $gray-500;
+    }
+  }
